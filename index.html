@@ -1,0 +1,201 @@
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Import Products</h1>
+  </header>
+  <main>
+    <section id="step1">
+      <h2>Step 1: Select File</h2>
+      <div class="file-upload">
+        <input type="file" id="inputFile" accept=".csv, .json">
+        <label for="inputFile">Browse...</label>
+        <span id="selectedFile"></span>
+      </div>
+    </section>
+    <section id="step2">
+      <h2>Step 2: Specify Format</h2>
+      <div class="format-options">
+        <label for="fileType">File Type:</label>
+        <select id="fileType">
+          <option value="csv">CSV</option>
+          <option value="json">JSON</option>
+        </select>
+        <select id="fileType">
+            <option value="csv">CSV</option>
+            <option value="json">Comma</option>
+            <option value="json">Comma</option>
+            <option value="json">Comma</option>
+            <option value="json">Comma</option>
+            <option value="json">Comma</option>
+
+
+          </select>
+          <select id="fileType">
+            <option value="csv">CSV</option>
+            <option value="json">UTF-8</option>
+            <option value="json">UTF-8</option>
+            <option value="json">UTF-8</option>
+            <option value="json">UTF-8</option>
+            <option value="json">UTF-8</option>
+            <option value="json">UTF-8</option>
+          </select>
+        <label for="encoding">Character Encoding:</label>
+        <span id="encoding">UTF-8</span>
+        <label for="delimiter">Delimiter:</label>
+        <span id="delimiter">Comma</span>
+        <label for="hasHeader">
+          <input type="checkbox" id="hasHeader">
+          Has Header Row
+        </label>
+      </div>
+    </section>
+    <section id="step3">
+      <h2>Step 3: Display Handling</h2>
+      <div class="field-selection">
+        <div class="available-fields">
+          <h4>Available Fields</h4>
+        </select>
+        <select id="fileType">
+          <option value="csv">products-Id</option>
+          <option value="json">products Id</option>
+          <option value="json">Subcategory</option>
+          <option value="json">Title </option>
+          <option value="json">Price</option>
+          <option value="json">popularty-8</option>
+          <option value="json">Description</option>
+          <option value="json">Rating</option>
+          <option value="json">Utm Source</option>
+          <option value="json">Utm Medium</option>
+
+        </select>
+          <ul id="availableFieldsList">
+            </ul>
+        </div>
+        <div class="selected-fields">
+          <h4>Fields to be Displayed</h4>
+        </select>
+        <select id="fileType">
+          <option value="csv">products-Id</option>
+          <option value="json">Subcategory</option>
+          <option value="json">UTF-8</option>
+          <option value="json">UTF-7</option>
+          <option value="json">UTF-6</option>
+          <option value="json">UTF-5</option>
+          <option value="json">UTF-4</option>
+        </select>
+          <ul id="selectedFieldsList">
+            </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <button id="nextBtn">Next</button>
+    <button id="cancelBtn">Cancel</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Import Products</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <header>
+     <h1>Import Products</h1>
+   </header>
+   <main>
+     <section id="step1">
+       <h2>Step 1: Select File</h2>
+       <div class="file-upload">
+         <input type="file" id="inputFile" accept=".csv, .json">
+         <label for="inputFile">Browse...</label>
+         <span id="selectedFile"></span>
+       </div>
+     </section>
+     <section id="step2">
+       <h2>Step 2: Specify Format</h2>
+       <div class="format-options">
+         <label for="fileType">File Type:</label>
+         <select id="fileType">
+           <option value="csv">CSV</option>
+           <option value="json">JSON</option>
+         </select>
+         <label for="encoding">Character Encoding:</label>
+         <select id="encoding">
+           <option value="utf-8">UTF-8</option>
+           <option value="utf-16">UTF-16</option>
+           <option value="utf-32">UTF-32</option>
+         </select>
+         <label for="delimiter">Delimiter:</label>
+         <select id="delimiter">
+           <option value="comma">Comma</option>
+           <option value="semicolon">Semicolon</option>
+           <option value="tab">Tab</option>
+         </select>
+         <label for="hasHeader">
+           <input type="checkbox" id="hasHeader">
+           Has Header Row
+         </label>
+       </div>
+     </section>
+     <section id="step3">
+       <h2>Step 3: Display Handling</h2>
+       <div class="field-selection">
+         <div class="available-fields">
+           <h4>Available Fields</h4>
+           <select id="availableFields">
+             <option value="products-Id">Product ID</option>
+             <option value="subCategory">Subcategory</option>
+             <option value="title">Title</option>
+             <option value="price">Price</option>
+             <option value="popularity">Popularity</option>
+             <option value="description">Description</option>
+             <option value="rating">Rating</option>
+             <option value="utmSource">UTM Source</option>
+             <option value="utmMedium">UTM Medium</option>
+           </select>
+           <ul id="availableFieldsList"></ul>
+         </div>
+         <div class="selected-fields">
+           <h4>Fields to be Displayed</h4>
+           <select id="selectedFields">
+             <option value="products-Id">Product ID</option>
+             <option value="subCategory">Subcategory</option>
+             <option value="title">Title</option>
+             <option value="price">Price</option>
+             <option value="popularity">Popularity</option>
+             <option value="description">Description</option>
+             <option value="rating">Rating</option>
+             <option value="utmSource">UTM Source</option>
+             <option value="utmMedium">UTM Medium</option>
+           </select>
+           <ul id="selectedFieldsList"></ul>
+         </div>
+       </div>
+     </section>
+   </main>
+   <footer>
+     <button id="nextBtn">Next</button>
+     <button id="cancelBtn">Cancel</button>
+   </footer>
+   <script src="script.js"></script>
+ </body>
+ </html>
+ 
